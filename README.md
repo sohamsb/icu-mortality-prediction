@@ -6,14 +6,14 @@ This project was completed as part of the Advanced Machine Learning coursework f
 
 ## Key Features
 
-*Data Preprocessing & Exploration*
+***Data Preprocessing & Exploration***
 
 Dataset Source: GOSSIS consortium, containing international critical care data, with a publicly available subset of 91,713 rows on Kaggle.
 
 Preprocessing Steps: Dropped irrelevant columns and rows with missing values, created new features (like summing the presence of chronic conditions for comorbidity scores, aggregating Glasgow Coma Scale (GCS) components into a total score, consolidating infrequent categorical values to reduce dimensionality), and scaled numerical features using StandardScaler. We also applied PCA to reduce dimensionality, retaining only key features while maintaining explained variance.
 
 
-*Handling Class Imbalance*
+***Handling Class Imbalance***
 
 ICU mortality represents only ~8% of cases in the dataset, leading to a severe imbalance that can skew predictions. We implemented and compared the following strategies:
 
@@ -24,7 +24,7 @@ SMOTENC: Synthetic Minority Oversampling Technique for Nominal and Continuous va
 Class Weight Adjustment: Penalized misclassification of minority classes during training.
 
 
-*Modeling Techniques*
+***Modeling Techniques***
 
 We explored a wide range of machine learning algorithms, including Logistic Regression, Naive Bayes, Random Forest, Gradient Boosting (XGBoost, CatBoost), Support Vector Machines (SVM), K-Nearest Neighbors (KNN), and Multi-Layer Perceptron (MLP) Neural Networks.
 
