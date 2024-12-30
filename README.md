@@ -40,8 +40,13 @@ Focused on maximizing **recall** to ensure accurate identification of at-risk pa
 The Multi-Layer Perceptron (MLP) neural network with SMOTENC was our top performer, with the following stats :-
 
 Accuracy: 92.71%
+
 Recall: 90.18% (critical for identifying at-risk patients)
+
 Precision: 94.57%
+
 F1-Score: 92.32%
+
 ROC AUC: 98.5%
+
 PR AUC: 98.37%
