@@ -31,3 +31,17 @@ We explored a wide range of machine learning algorithms, including Logistic Regr
 Trained 27 models using combinations of class imbalance strategies.
 
 Focused on maximizing **recall** to ensure accurate identification of at-risk patients, minimizing false negatives.
+
+
+## Outcomes
+
+***Best Model Performance***
+
+The Multi-Layer Perceptron (MLP) neural network with SMOTENC was our top performer, with the following stats :-
+
+Accuracy: 92.71%
+Recall: 90.18% (critical for identifying at-risk patients)
+Precision: 94.57%
+F1-Score: 92.32%
+ROC AUC: 98.5%
+PR AUC: 98.37%
