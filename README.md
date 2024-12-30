@@ -16,8 +16,16 @@ Preprocessing Steps: Dropped irrelevant columns and rows with missing values, cr
 
 ICU mortality represents only ~8% of cases in the dataset, leading to a severe imbalance that can skew predictions. We implemented and compared the following strategies:
 
-Do Nothing: Used the dataset as is.
+Do Nothing: Used the dataset as-is.
 
 SMOTENC: Synthetic Minority Oversampling Technique for Nominal and Continuous variables.
 
 Class Weight Adjustment: Penalized misclassification of minority classes during training.
+
+*Modeling Techniques*
+
+We explored a wide range of machine learning algorithms, including Logistic Regression, Naive Bayes, Random Forest, Gradient Boosting (XGBoost, CatBoost), Support Vector Machines (SVM), K-Nearest Neighbors (KNN), and Multi-Layer Perceptron (MLP) Neural Networks.
+
+Trained 27 models using combinations of class imbalance strategies.
+
+Focused on maximizing **recall** to ensure accurate identification of at-risk patients, minimizing false negatives.
