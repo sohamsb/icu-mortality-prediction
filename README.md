@@ -7,4 +7,5 @@ This project was completed as part of the Advanced Machine Learning coursework f
 ## Key Features
 
 *Data Preprocessing & Exploration*
+
 Dataset Source: GOSSIS consortium, containing international critical care data, with a publicly available subset of 91,713 rows on Kaggle.
