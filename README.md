@@ -88,7 +88,6 @@ ROC AUC: 0.8457
 While APACHE had higher precision, our MLP model demonstrated superior recall, a critical metric in clinical settings where missing at-risk patients can have severe consequences.
 
 
-
 ***PubMed Article Search***
 
 To validate our model findings, we designed a pipeline to search, rank, and summarize PubMed articles:
@@ -102,3 +101,24 @@ To validate our model findings, we designed a pipeline to search, rank, and summ
 4. Summarized abstracts with HuggingFace's BART model, focusing on relevance to query terms.
 
 This process highlighted clinical evidence supporting the importance of features like Age, BMI, and GCS in predicting ICU mortality.
+
+
+## Conclusion
+
+Improved Predictions: Machine learning models like MLP outperformed traditional scoring systems in recall and generalizability.
+
+Global Applicability: Leveraged diverse datasets to ensure models work across different healthcare settings.
+
+Clinical Alignment: Key predictors align with clinical expertise, boosting trust in our approach.
+
+
+## Analysis Enhancement
+
+We can look to refine and strengthen our analysis by:
+
+1. Investigating feature interactions and alternative dimensionality reduction methods.
+
+2. Conducting fairness assessments to avoid bias in predictions.
+
+3. Improving computational efficiency and exploring hyperparameter tuning with tools like Optuna.
+
