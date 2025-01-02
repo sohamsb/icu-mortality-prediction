@@ -88,12 +88,17 @@ ROC AUC: 0.8457
 While APACHE had higher precision, our MLP model demonstrated superior recall, a critical metric in clinical settings where missing at-risk patients can have severe consequences.
 
 
+
 ***PubMed Article Search***
 
 To validate our model findings, we designed a pipeline to search, rank, and summarize PubMed articles:
 
 Queried PubMed for terms like "ICU Mortality," "Age," "Glasgow Coma Scale," and "BMI."
+
 Ranked articles using AllenAI SPECTER embeddings and cosine similarity.
+
 Extracted key sentences using BM25.
+
 Summarized abstracts with HuggingFace's BART model, focusing on relevance to query terms.
+
 This process highlighted clinical evidence supporting the importance of features like Age, BMI, and GCS in predicting ICU mortality.
