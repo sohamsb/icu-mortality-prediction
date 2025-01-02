@@ -72,14 +72,14 @@ Key predictors: Age, BMI, Glasgow Coma Scale (GCS).
 
 We benchmarked our best model against traditional APACHE scores:
 
-_**MLP:**_
+_*MLP:*_
 
 Recall: 0.58
 
 ROC AUC: 0.8430
 
 
-_**APACHE:**_
+_*APACHE:*_
 
 Recall: 0.41
 
