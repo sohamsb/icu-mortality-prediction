@@ -93,12 +93,12 @@ While APACHE had higher precision, our MLP model demonstrated superior recall, a
 
 To validate our model findings, we designed a pipeline to search, rank, and summarize PubMed articles:
 
-Queried PubMed for terms like "ICU Mortality," "Age," "Glasgow Coma Scale," and "BMI."
+1. Queried PubMed for terms like "ICU Mortality," "Age," "Glasgow Coma Scale," and "BMI."
 
-Ranked articles using AllenAI SPECTER embeddings and cosine similarity.
+2. Ranked articles using AllenAI SPECTER embeddings and cosine similarity.
 
-Extracted key sentences using BM25.
+3. Extracted key sentences using BM25.
 
-Summarized abstracts with HuggingFace's BART model, focusing on relevance to query terms.
+4. Summarized abstracts with HuggingFace's BART model, focusing on relevance to query terms.
 
 This process highlighted clinical evidence supporting the importance of features like Age, BMI, and GCS in predicting ICU mortality.
