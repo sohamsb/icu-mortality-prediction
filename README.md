@@ -35,6 +35,13 @@ Focused on maximizing **recall** to ensure accurate identification of at-risk pa
 
 ## Outcomes
 
+***Model Evaluation Process***
+
+Adjusted decision thresholds to achieve high recall (~90%), prioritizing patient safety by minimizing false negatives.
+
+Conducted K-fold cross-validation for robust performance evaluation.
+
+
 ***Best Model Performance***
 
 The Multi-Layer Perceptron (MLP) neural network with SMOTENC was our top performer, with the following stats :-
@@ -50,3 +57,28 @@ F1-Score: 92.32%
 ROC AUC: 98.5%
 
 PR AUC: 98.37%
+
+
+***Feature Importance and Interpretability***
+
+Used SHAP values for tree-based models and DeepLIFT for neural networks to identify key predictors and enhance transparency.
+
+Key predictors: Age, BMI, Glasgow Coma Scale (GCS).
+
+
+## Extensions
+
+***Comparison with APACHE Scoring***
+
+We benchmarked our best model against traditional APACHE scores:
+
+_**MLP:**_
+Recall: 0.58
+ROC AUC: 0.8430
+
+
+_**APACHE:**_
+Recall: 0.41
+ROC AUC: 0.8457
+
+While APACHE had higher precision, our MLP model demonstrated superior recall, a critical metric in clinical settings where missing at-risk patients can have severe consequences.
